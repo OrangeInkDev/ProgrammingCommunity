@@ -3,11 +3,11 @@ def BMI(height, weight):
     return bmi
 
 
-height = 1.50
-weight = 62
+height = float(input("Enter height in metres: "))
+weight = int(input("Enter weight in kgs: "))
 
 bmi = BMI(height, weight)
-print("The BMI is", format(bmi), "so ", end='')
+print("The BMI status is", format(bmi, ".3f"), "quite ", end='')
 
 if (bmi < 18.5):
     print("underweight")
